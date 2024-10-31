@@ -122,6 +122,7 @@ const Parser = async () => {
 };
 
 const NewParser = async () => {
+    console.log("Scraper is running...");
     var memory = [];
     const browser = await puppeteer.launch({headless: true, defaultViewport: null, args: ['--incognito'],});
     const context = await browser.createIncognitoBrowserContext();
